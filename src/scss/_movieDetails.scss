@@ -1,0 +1,55 @@
+.movie-info {
+    
+ 
+
+  
+ 
+   
+}
+
+
+.movie-details {
+  display: flex;
+  
+  
+  
+ 
+ 
+
+ 
+  .movie-poster {
+       width:40%;
+     
+        img {
+          height:100%;
+          width:100%;
+          
+          
+         
+       
+            
+        }
+   
+  }
+  
+  .general-info {
+    padding:10px;
+      width:70%;
+      .title {
+          color: dodgerblue;
+          font-size: 2rem;
+          
+         
+      }
+  }
+}
+
+
+.plot {
+    padding: 10px;
+    font-size: 1.1rem;
+   
+   
+    
+}
+

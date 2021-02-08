@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+
+  text-align: center;
+  padding: 10px;
+}
+.logo {
+    font-size: 30px;
+  }
+
+.home {
+  nav {
+    flex-direction: column;
+
+   
+  }
+}
+
+.movie-info-page {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .new-search {
+  }
+}

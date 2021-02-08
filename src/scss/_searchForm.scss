@@ -1,0 +1,43 @@
+//Main styles for the movie search form
+
+.search-form {
+  input {
+    width: 80%;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-right: none;
+  }
+  button {
+    padding: 10px;
+
+    border: 1px solid black;
+    border-left: none;
+  }
+
+  @include mediaQuery(tab-port) {
+    input {
+        width: 60%;
+      }
+  }
+  @include mediaQuery(tab-land) {
+    input {
+        width: 40%;
+      }
+  }
+  @include mediaQuery(lap-desk) {
+    input {
+        width: 40%;
+      }
+  }
+  @include mediaQuery(big-desktop) {
+    input {
+      width: 40%;
+    }
+    @include mediaQuery(xl) {
+        input {
+            width: 30%;
+          }
+    }
+  }
+}

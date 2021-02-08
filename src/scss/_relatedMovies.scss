@@ -1,0 +1,33 @@
+.related-movies-list {
+    
+}
+
+.related-movies {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content:flex-start;
+}
+
+.related-movie-poster {
+  width: (100%/4);
+  padding:10px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 9px gray;
+  
+    
+  }
+  @include mediaQuery(tab-port){
+   
+    width: (100%/5);
+    img {
+        border-radius: 5px;
+        object-fit:contain;
+    }
+
+    
+}
+}

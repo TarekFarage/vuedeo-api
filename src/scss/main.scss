@@ -1,0 +1,19 @@
+@use '@variables';
+@use '@utilities';
+@use '@media_queries';
+@use '@searchForm';
+@use '@searchResults';
+@use '@movieDetails';
+@use '@relatedMovies';
+@use '@nav';
+
+body {
+  height: 100vh;
+  font-family: $main-font;
+}
+
+
+
+
+
+
