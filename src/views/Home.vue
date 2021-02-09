@@ -10,7 +10,7 @@
         <form @submit.prevent="searcher()">
           <input
             type="text"
-            placeholder="Search for a movie..."
+            placeholder="Search for a movie"
             id="searchField"
             v-model="search"
             autofocus
