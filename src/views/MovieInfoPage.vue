@@ -16,24 +16,31 @@
           <img :src="movie.Poster" alt="test" />
         </div>
         <div class="general-info">
-          <h2 class="title">
-            {{ movie.Title }}
-          </h2>
+          <div class="title">
+            <h4>{{ movie.Title }}</h4>
+           
+            
+          </div>
 
-          <div class="movie-specs">
-            <span class="">Genre:</span>
-            {{ movie.Genre }}
+          <div class="movie-numbers">
+        
 
-            <span class="">Year</span>
-            {{ movie.Year }}
-
-            <span class="">Type</span>
-            {{ movie.Type }}
-
-            <span class="">Rating</span>
-            {{ movie.Rated }}
+           <ul>
+              <li>Year:{{ movie.Year }}</li>
+              <li>Raring:{{ movie.Rated }}</li>
+            </ul>
+           <br>
           </div>
         </div>
+      </div>
+      <div class="movie-specs">
+            
+           <p class="genre-list"><span class="genre">Genre: </span>  {{ movie.Genre }}</p>
+
+            
+            
+
+          
       </div>
       <div class="plot">
         {{ movie.Plot }}

@@ -17,7 +17,7 @@
           />
 
           <button
-            class="button is-warning"
+            class=""
             id="searchButton"
             type="submit"
             value="GO"
@@ -40,6 +40,7 @@
             }"
           >
             <img class="" :src="movie.Poster" alt="test" />
+            
           </router-link>
         </div>
         <div class="short-info">

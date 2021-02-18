@@ -2,42 +2,23 @@
 
 .search-form {
   input {
-    width: 80%;
+    width: 70%;
     padding: 10px;
+    border: none;
+    box-shadow: 0 0 ;
+    border-radius: 2px 0 0 2px;
 
-    border: 1px solid black;
-    border-right: none;
+   
+   
   }
   button {
     padding: 10px;
-
-    border: 1px solid black;
-    border-left: none;
+    border-radius: 0 2px 2px 0;
+    border: none;
+    background-color: $main-blue;
+    color: $main-light;
+  
+   
   }
 
-  @include mediaQuery(tab-port) {
-    input {
-        width: 60%;
-      }
-  }
-  @include mediaQuery(tab-land) {
-    input {
-        width: 40%;
-      }
-  }
-  @include mediaQuery(lap-desk) {
-    input {
-        width: 40%;
-      }
-  }
-  @include mediaQuery(big-desktop) {
-    input {
-      width: 40%;
-    }
-    @include mediaQuery(xl) {
-        input {
-            width: 30%;
-          }
-    }
-  }
 }
