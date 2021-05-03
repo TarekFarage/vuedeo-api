@@ -1,33 +1,11 @@
-.related-movies-list {
-    
-}
-
 .related-movies {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
- 
-  justify-content:flex-start;
-}
-
-.related-movie-poster {
-  width: (100%/4);
-  padding:10px;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 4px 9px gray;
-  
-    
+  justify-content: center;
+  margin-top:20px;
+  border-top: 3px solid $dark-bg;
+  .related-movie-poster{
+    width:30%;
+    margin: 5px;
   }
-  @include mediaQuery(tab-port){
-   
-    width: (100%/5);
-    img {
-        border-radius: 5px;
-        object-fit:contain;
-    }
-
-    
-}
 }

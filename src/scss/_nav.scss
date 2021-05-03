@@ -1,37 +1,45 @@
-.home {
-  nav {
-    text-align: center;
-
-    .logo {
-      font-size: 30px;
-
-      font-family: $title-font;
-      a {
-        color: $greenish;
-      }
+.home nav {
+  background-color: $dark-bg;
+  padding-bottom: 20px;
+  text-align: center;
+  .logo {
+    padding: 10px 0;
+    font-family: $title-font;
+    font-size: 1.5rem;
+    color: $main-light;
+    a:visited {
+      color: $main-light;
     }
   }
+
+  
 }
 
-.movie-info-page {
-  nav {
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center;
+.movie-info-page nav {
+  background-color: $dark-bg;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  justify-content: center;
+  .logo {
     
-    .logo {
-      font-size: 30px;
-
-      font-family: $title-font;
-      a {
-        color: $greenish;
-      }
+    font-family: $title-font;
+    font-size: 1.5rem;
+    color: $main-light;
+    a:visited {
+      color: $main-light;
     }
-    .new-search {
-    
+  }
+  .new-search {
+    color: $main-light;
+    a:visited {
+      color: $main-light;
     }
-    
+    margin-right: 10px;
+    font-size: 2rem;
   }
 
- 
+  
 }
+

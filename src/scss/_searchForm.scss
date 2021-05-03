@@ -1,19 +1,20 @@
 //Main styles for the movie search form
 
 .search-form {
+  width: 100%;
   input {
-    width: 70%;
+    width:80%;
     padding: 10px;
     border: none;
     box-shadow: 0 0 ;
-    border-radius: 2px 0 0 2px;
+    border-radius: 4px 0 0 4px;
 
    
    
   }
   button {
     padding: 10px;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 4px 4px 0;
     border: none;
     background-color: $main-blue;
     color: $main-light;

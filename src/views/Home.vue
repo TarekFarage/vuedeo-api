@@ -1,13 +1,13 @@
 <template>
-  <div class="home">
+  <div class="home container">
     <nav>
       <div class="logo">
         <router-link class="" to="/"
           ><h1 class=""><span class="">Vue</span>deo</h1>
         </router-link>
       </div>
-      <div class="search-form">
-        <form @submit.prevent="searcher()">
+      <div class="search">
+        <form class="search-form" @submit.prevent="searcher()">
           <input
             type="text"
             placeholder="Search for a movie"

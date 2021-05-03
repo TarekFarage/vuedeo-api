@@ -1,58 +1,29 @@
-.movie-info {
-  
-}
-
 .movie-details {
-  background-color: $greenish;
-  
   display: flex;
   padding: 10px;
+  background-color: $main-blue;
+  color: $main-light;
   .movie-poster {
-    width: 40%;
-    height: 100%;
-    img {
-      height: auto;
-      width: 100%;
-      object-fit: fill;
-      border-radius: 5px;
-      box-shadow: 0 0 6px grey;
-    }
+    width: 30%;
   }
-
   .general-info {
-    display: flex;
-    flex-direction: column;
-   padding-left:10px;
+    padding-left: 10px;
+    flex:1;
     .title {
-      height:50%;
-      color: $main-light;
-      
+      width: 100%;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+      text-align: center;
      
     }
-    .movie-rating{
-      text-align: center;
+    .movie-numbers {
+      ul li {
+        list-style: none;
+      }
     }
-    
   }
-}
-.movie-specs {
-  background-color: $greenish;
-  color: $main-light;
-  padding:10px;
-  display: flex;
-  font-size: 0.7rem;
-  justify-content: center;
-  p {
-    padding: 5px;;
-    span {
-      font-weight: bold;
-    }
 
-  }
- 
+  
 }
 
-.plot {
-  padding: 10px;
-  font-size: 1.1rem;
-}
+

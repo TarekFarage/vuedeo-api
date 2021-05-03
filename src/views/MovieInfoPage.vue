@@ -1,5 +1,5 @@
 <template>
-  <div class="movie-info-page">
+  <div class="movie-info-page container">
     <nav class="">
       <div class="logo">
         <router-link class="" to="/"
@@ -7,7 +7,7 @@
         </router-link>
       </div>
       <div class="new-search">
-        <router-link class="" to="/"> New Search </router-link>
+        <router-link class="" to="/"> &#8592;</router-link>
       </div>
     </nav>
     <section class="movie-info">
@@ -18,29 +18,21 @@
         <div class="general-info">
           <div class="title">
             <h4>{{ movie.Title }}</h4>
-           
-            
           </div>
 
           <div class="movie-numbers">
-        
-
-           <ul>
-              <li>Year:{{ movie.Year }}</li>
-              <li>Raring:{{ movie.Rated }}</li>
+            <ul>
+              <li><span>Year:</span>{{ movie.Year }}</li>
+              <li><span>Raring:</span>{{ movie.Rated }}</li>
             </ul>
-           <br>
+            <br />
           </div>
         </div>
       </div>
       <div class="movie-specs">
-            
-           <p class="genre-list"><span class="genre">Genre: </span>  {{ movie.Genre }}</p>
-
-            
-            
-
-          
+        <p class="genre-list">
+          <span class="genre">Genre: </span> {{ movie.Genre }}
+        </p>
       </div>
       <div class="plot">
         {{ movie.Plot }}
@@ -57,7 +49,7 @@
             @click="getInfo()"
             :to="{
               name: 'MovieInfoPage',
-              params: { id: item.imdbID},
+              params: { id: item.imdbID },
             }"
           >
             <img :src="item.Poster" alt="" />
@@ -88,30 +80,32 @@ export default {
     getInfo()
 
     function getInfo() {
-     
       //fetch detailed movie info by using movie ID passed as param in link
-       console.log(`Movie ID, passed through router link params: ${routedId.params.id}`)
+      console.log(
+        `Movie ID, passed through router link params: ${routedId.params.id}`
+      )
       fetch(
         `http://www.omdbapi.com/?apikey=${cstm.myKey}&i=${routedId.params.id}&plot=full`
       )
         .then((res) => res.json())
         .then((data) => {
           movie.value = data
-          
+          console.log(data)
         })
     }
     //Get the list of movies in search results using searched word passed as param in link
-     console.log(`Search value, passed through router link params: ${routedId.params.searchRecap}`)
+    console.log(
+      `Search value, passed through router link params: ${routedId.params.searchRecap}`
+    )
     fetch(
       `http://www.omdbapi.com/?apikey=${cstm.myKey}&s=${routedId.params.searchRecap}`
     )
       .then((res) => res.json())
       .then((data) => {
         movieInfo.value = data.Search
-        
       })
     return { movie, movieInfo, searchTerm }
-  }
+  },
 }
 </script>
 
